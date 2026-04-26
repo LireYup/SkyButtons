@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.10-SNAPSHOT'
+    id 'fabric-loom' version '1.16.1'
     id 'maven-publish'
 }
 
@@ -12,7 +12,9 @@ base {
 
 repositories {
     // Add repositories to retrieve artifacts from in here.
+    mavenCentral()
     maven { url 'https://maven.wispforest.io/releases/' }
+    maven { url 'https://jitpack.io' }
 }
 
 loom {
